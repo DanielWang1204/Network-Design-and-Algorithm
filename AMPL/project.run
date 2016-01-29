@@ -1,0 +1,5 @@
+model project.mod;
+data project.dat;
+option solver "./cplex";
+solve;
+display u,total_cost > project.ans;
